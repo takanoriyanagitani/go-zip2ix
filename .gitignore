@@ -31,3 +31,4 @@ go.work.sum
 # .idea/
 # .vscode/
 *.swp
+cmd/zip2ix2asn1/zip2ix2asn1.wasm
