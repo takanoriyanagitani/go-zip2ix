@@ -1,0 +1,18 @@
+ZipIndexInfo DEFINITIONS ::= BEGIN
+
+  CompressionMethod ::= ENUMERATED {
+    unspecified (0),
+    store       (100),
+    deflate     (108)
+  }
+
+  LeastZipIndexInfo ::= SEQUENCE {
+    name              UTF8String,
+	offset            INTEGER,
+    compressedSize    INTEGER,
+    compressionMethod CompressionMethod
+  }
+
+  SequenceOfIndexInfo ::= SEQUENCE OF LeastZipIndexInfo
+
+END
